@@ -12,19 +12,19 @@ print(f'1.uzdevums: {min(founded)}')
 
 
 """Kāds ir darbinieku skaits, kas strādā Latvijā?"""
-worker_count = 0
+worker_count = []
 for row in txt_data:
     if row[4] == 'Latvia':
-        worker_count += 1
-print(f'2.uzdevums: {worker_count}')
+        worker_count.append(row[8])
+print(f'2.uzdevums: {sum(worker_count)}')
 
 
 """Kāds ir darbinieku skaits kas strādā telekomunikācijas jomā Latvijā.  (Industry = Telecommunications, Country = Latvia) ?"""
-worker_count = 0
+worker_count = []
 for row in txt_data:
     if row[7] == 'Telecommunications' and row[4] == 'Latvia':
-        worker_count += 1
-print(f'3.uzdevums: {worker_count}')
+        worker_count.append(row[8])
+print(f'3.uzdevums: {sum(worker_count)}')
 
 
 """Cik no datu bāze esošajiem Latvijas kompānijām ir SSL sertifikāts? (SSL sertifikāts ir kompānijām, kuram tīmekļa adrese sākas ar https://)"""
