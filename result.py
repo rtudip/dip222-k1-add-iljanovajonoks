@@ -37,7 +37,7 @@ count = 0
 for i in company_site:
     if i[0:5] == 'https':
         count += 1
-print(f'4.uzdevums {count}')
+print(f'4.uzdevums: {count}')
 
 
 """Cik reizes datu bāzē tiek minēts domēna vārds .org reģionam Latvia?"""
@@ -50,4 +50,4 @@ count = 0
 for i in site:
     if i[-5:-1] == '.org':
         count += 1
-print(f'5.uzdevums {count}')
+print(f'5.uzdevums: {count}')
